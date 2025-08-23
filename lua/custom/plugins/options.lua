@@ -4,3 +4,5 @@ vim.o.softtabstop = 2 -- Number of spaces inserted instead of a TAB character
 vim.o.shiftwidth = 2 -- Number of spaces inserted when indenting
 -- set this on nvim 0.11
 vim.o.completeopt = 'menuone,noselect,popup,fuzzy'
+
+return {}

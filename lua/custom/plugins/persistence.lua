@@ -6,7 +6,7 @@ return {
   },
   keys = {
     {
-      '<leader>S',
+      '<leader>l',
       function()
         require('persistence').load()
       end,

@@ -179,7 +179,11 @@ vim.opt.spelllang = 'en_us'
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Diagnostic keymaps
-vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
+--vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
+vim.keymap.set('n', '<leader>ql', ':Telescope diagnostics<CR>', { desc = '[L]ist diagnostics messages' })
+vim.keymap.set('n', '<leader>qv', function()
+  vim.diagnostic.open_float()
+end, { desc = '[V]iew current line diagnostic' })
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which

@@ -13,9 +13,6 @@ vim.g.autoformat = false
 vim.g.spellfile_URL = 'https://ftp.nluug.nl/vim/runtime/spell/'
 vim.opt.spelllang = 'en_us'
 
-vim.keymap.set('n', '<leader>ql', ':Telescope diagnostics<CR>', { desc = '[L]ist diagnostics messages' })
-vim.keymap.set('n', '<leader>qv', function() vim.diagnostic.open_float() end, { desc = '[V]iew current line diagnostic' })
-
 vim.keymap.set(
   'n',
   '<leader><leader>',

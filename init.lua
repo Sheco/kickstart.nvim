@@ -118,6 +118,8 @@ vim.schedule(function()
   vim.o.clipboard = 'unnamedplus'
 end)
 
+-- add borders to certain popups
+vim.o.winborder = 'rounded'
 -- Enable break indent
 vim.o.breakindent = true
 
